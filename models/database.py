@@ -122,7 +122,7 @@ class UserPreference(Base):
 def init_db():
     """Create all tables if they don't already exist."""
     Base.metadata.create_all(bind=engine)
-    print("✅ Database tables created / verified.")
+    print(" Database tables created / verified.")
 
 
 def get_db():
