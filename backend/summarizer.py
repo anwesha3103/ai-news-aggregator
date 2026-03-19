@@ -126,7 +126,7 @@ def summarize_article(article: Article) -> str:
         )
         return result[0]["generated_text"].strip()
     except Exception as exc:
-        print(f"⚠️  Summarisation failed for article {article.id}: {exc}")
+        print(f"  Summarisation failed for article {article.id}: {exc}")
         return article.description or article.title or "Summary unavailable."
 
 
@@ -143,7 +143,7 @@ def translate_text(text: str, language: str) -> str:
         result = translator(text, max_length=512, truncation=True)
         return result[0]["translation_text"].strip()
     except Exception as exc:
-        print(f"⚠️  Translation to {language} failed: {exc}")
+        print(f"  Translation to {language} failed: {exc}")
         return text
 
 
