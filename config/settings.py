@@ -56,5 +56,5 @@ MAX_RECOMMENDATIONS: int = 5
 
 # ── Streamlit App ─────────────────────────────────────────────────────────────
 APP_TITLE: str = "AI News Aggregator"
-APP_ICON: str = "🗞️"
+APP_ICON: str = ""
 ARTICLES_PER_PAGE: int = 9
