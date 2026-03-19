@@ -1,10 +1,10 @@
-# 🗞️ AI-Based Personalized News Aggregator
+#  AI-Based Personalized News Aggregator
 
 An end-to-end AI news pipeline that fetches live headlines, generates concise transformer-based summaries, supports multi-language translation, and serves a personalised article feed — all through a clean Streamlit interface.
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Details |
 |---|---|
@@ -18,7 +18,7 @@ An end-to-end AI news pipeline that fetches live headlines, generates concise tr
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 ai-news-aggregator/
@@ -41,7 +41,7 @@ ai-news-aggregator/
 
 ---
 
-## 🚀 Setup & Run
+##  Setup & Run
 
 ### 1. Clone the repository
 
@@ -93,7 +93,7 @@ Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 🔑 Getting a NewsAPI Key
+##  Getting a NewsAPI Key
 
 1. Go to [newsapi.org/register](https://newsapi.org/register)
 2. Sign up for a free account (100 requests/day on the free plan)
@@ -101,7 +101,7 @@ Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### Summarisation Pipeline
 
@@ -135,7 +135,7 @@ User preferences (categories + engagement scores)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python 3.11+**
 - **Streamlit** – interactive web UI
@@ -147,7 +147,7 @@ User preferences (categories + engagement scores)
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - The T5 model is loaded once at startup and cached in session state — this avoids expensive re-loads on Streamlit reruns.
 - Translation models are downloaded lazily (only when a language is first selected) and cached in memory.
