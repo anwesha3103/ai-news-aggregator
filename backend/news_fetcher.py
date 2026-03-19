@@ -60,13 +60,13 @@ def _fetch_headlines(category: str, page_size: int = ARTICLES_PER_CATEGORY) -> l
         data = resp.json()
 
         if data.get("status") != "ok":
-            print(f"⚠️  NewsAPI error for '{category}': {data.get('message')}")
+            print(f"  NewsAPI error for '{category}': {data.get('message')}")
             return []
 
         return data.get("articles", [])
 
     except requests.RequestException as exc:
-        print(f"❌ Network error fetching '{category}': {exc}")
+        print(f" Network error fetching '{category}': {exc}")
         return []
 
 
@@ -133,7 +133,7 @@ def fetch_and_store(
                 # Race condition: another process inserted the same URL
                 db.rollback()
 
-    print(f"✅ Inserted {len(inserted)} new articles across {len(categories)} categories.")
+    print(f" Inserted {len(inserted)} new articles across {len(categories)} categories.")
     return inserted
 
 
