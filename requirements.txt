@@ -1,0 +1,34 @@
+# requirements.txt
+# Install with:  pip install -r requirements.txt
+
+# ── Web / API 
+streamlit==1.35.0
+requests==2.32.3
+python-dotenv==1.0.1
+
+# ── Database ──
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9      # PostgreSQL adapter
+
+# ── ML / NLP 
+transformers==4.44.0
+torch==2.6.0             
+sentencepiece==0.2.1      # required by T5 tokeniser
+sacremoses==0.1.1           # required by MarianMT tokeniser
+scikit-learn==1.5.2         # TF-IDF recommendation engine
+numpy==2.1.0
+
+
+
+
+streamlit
+requests
+python-dotenv
+sqlalchemy
+psycopg2-binary
+transformers
+torch
+sentencepiece
+sacremoses
+scikit-learn
+numpy
